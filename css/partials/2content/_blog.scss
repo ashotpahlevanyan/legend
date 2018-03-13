@@ -1,0 +1,94 @@
+/* style for Our Blog===================
+=========================================*/
+
+.blogSection {
+	@extend %bgColor18;
+	@extend %fontColor10;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	height: auto;
+	.pageSymbol {
+	@extend %fontColor10;
+	}
+	button {
+		display: block;
+		@extend %fontColor7;
+		@extend %bgColor13;
+		@include border-radius(3px);
+		@extend %fontStrong;
+		margin: 0 auto;
+		font-size: 20px;;
+		border: none;
+		width: 205px;
+		padding: 15px 10px;
+	}
+	button:hover {
+		@extend %bgColor12;
+	}
+}
+.ourBlog {
+	h2 {
+		text-align: center;
+		margin: 0.5em auto 1em;
+		font-size: 3em;
+		font-weight: bold;
+	}
+}
+.rowBlog {
+	max-width: 100%;
+	margin: 30px auto;
+	text-align: center;
+	.blogItems {
+		display: inline-block;
+		@extend %bgColor10;
+		margin: 0 8px 20px;
+		max-width: 367px;
+		height: auto;
+		border-radius: 0 0 5px 5px;
+		box-shadow: 0 0 0 #fff  inset, 0px 1px 6px rgba(0, 0, 0, 0.1);
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		.blogItem {
+			margin: 20px;
+			.date {
+				@extend %floatRight;
+				font-size: 14px;
+				margin: 20px 20px 10px 0; 
+				opacity: 0.7;
+			}
+			h3 {
+				@extend %fontColor10;
+				clear: right;
+				margin: 24px 0 16px;
+				font-size: 17px;
+				font-weight: bold;
+			}
+			p { 
+				@extend %multilineEllipsis;
+				@extend %fontColor10;
+				font-size: 14px;
+				margin-bottom: 20px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			a {	
+				@extend %textDecorNone;
+				@extend %fontColor9;
+				font-size: 12px;
+				font-weight: bold;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+
+
+/*========================================================
+============Responsive===================================*/

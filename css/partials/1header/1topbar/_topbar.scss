@@ -1,0 +1,34 @@
+/* Style for TOPBAR ===============
+==========================================*/
+
+/* Header for site==========================
+============================================*/
+header {
+	background-color: #0B333F;
+	width: 100%;
+	height: 92px;
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid #FFD630;
+	z-index: 10;
+	//outline: 1px solid #FFD630;
+	.brand {
+		margin-top: 20px;
+	}
+	.logo {
+		//@extend %Patua;
+		@extend %positionAbsolute;
+		z-index: 500;
+		@extend %tahoma;
+		@extend %floatLeft;
+		@extend %fontColor7;
+		@extend %textDecorNone;
+		@extend %fontStrong;
+		font-size: 30px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.logo:hover {
+		color: #F0BF00;
+	}
+}

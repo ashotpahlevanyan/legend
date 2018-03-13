@@ -1,0 +1,59 @@
+/* style for Portfolio===================
+=========================================*/
+.portfolioSection {
+	@extend %bgColor18;
+	@extend %fontColor10;
+	padding-top: 60px;
+	
+	.pageSymbol {
+	@extend %fontColor10;
+	}
+}
+.portfolio {
+	h2 {
+		text-align: center;
+		margin: 0.5em auto 1em;
+		font-size: 3em;
+		font-weight: bold;
+	}
+	.portfolioItems {
+		padding-left: 15px;
+		padding-right: 15px;
+		.item {
+			margin-bottom: 20px;
+			.port {
+				opacity: 0.8;
+				&:hover, &:focus {
+					opacity: 1;
+					-webkit-transition: opacity 0.3s ease-in-out 0s;
+					-moz-transition: opacity  0.3s ease-in-out 0s;
+					-o-transition: opacity 0.3s ease-in-out 0s;
+					transition: opacity  0.3s ease-in-out 0s;
+				}
+				img {
+				max-width: 100%;
+				}
+			}
+			h3 {
+				@extend %fontColor8;
+				margin-top: 20px;
+				font-size: 19px;
+				line-height: 22px;
+				font-weight: bold;
+			}
+			p {
+				font-size: 14px;
+				line-height: 25px;
+				margin: 10px 0 25px;
+			}
+			a {	
+			@extend %fontColor9;
+			font-size: 13px;
+			font-weight: 600;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

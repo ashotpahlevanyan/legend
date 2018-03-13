@@ -1,0 +1,90 @@
+/* style for portraitTeam===================
+=========================================*/
+
+.portraitTeam {
+		background-color: #312A1E;
+		padding-top: 40px;
+		padding-bottom:20px;
+	.pageSymbol {
+		@extend %fontColor7;
+	}
+	
+	h2 {
+		@extend %fontColor7;
+		text-align: center;
+		font-size: 30px;
+		line-height: 35px;
+		margin: 20px auto;
+	}
+	.portraitItem {
+		//margin: 80px auto 115px;
+		//width: 1000px;
+		margin-bottom: 60px;
+		padding: 0 15px;
+		text-align: center;
+		
+		.team {
+			display: inline-block;
+			margin: 15px;
+			@extend %fontColor7;
+			
+			img {
+				//border-radius: 75px;
+				max-width: 100%;
+			}
+			h3 {
+				font-size: 22px;
+				margin-bottom: 5px;
+				font-weight: bold; 
+			}
+			p {
+				font-size: 18px;
+			}
+		}	
+	}
+	
+	.moreInfo {
+		margin: 0 auto;
+		padding: 30px 15px;
+		color: #fff;
+		text-align: center;
+		font-size: 21px;
+		h3 {
+			font-size: 24px;
+			line-height: 30px;
+			max-width: 100%;
+			margin-bottom: 30px;
+			font-weight: bold;
+			
+			span {
+				font-weight: normal;
+				color: rgba(255,255,255,0.7);
+			}
+		}
+		p {
+			max-width: 100%;
+			color: rgba(255,255,255,0.9);
+		}
+	}
+}
+/*========================================================
+============Responsive===================================*/
+
+
+@media (max-width: 767px) {
+	.portrait {
+		text-align: center;
+		.team {
+			display: inline-block;
+			margin-top: 20px;
+		}
+	}
+	.portraitTeam {
+		.portraitItem {
+			margin-bottom: 20px;
+		}
+		.moreInfo {
+			font-size: 14px;
+		}
+	}
+}

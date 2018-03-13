@@ -1,0 +1,14 @@
+/* style for Common===================
+=========================================*/
+
+
+.pageSymbol {
+	display: block;
+	@extend %fontello;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 60px;
+	line-height: 70px;
+	max-width: 60px;
+}
+	

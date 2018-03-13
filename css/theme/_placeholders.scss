@@ -1,0 +1,402 @@
+/* placeholders for changable elements 
+=====================================*/
+
+%fontColor1 {
+	/* font color for logo title link */
+	color: #282828;
+}
+
+%fontColor2 {
+	/* font color for nav links */
+	color: #000;
+}
+
+%fontColor3 {
+	/* font color for nav links */
+	color: #545454;
+}
+
+%fontColor4 {
+	/* font color for resumeInfo, h3 */
+	color: #484848;
+}
+
+%fontColor5 {
+	/* font color for resumeInfo, h3 */
+	color: rgba(0,0,0,0.6);
+}
+%fontColor6 {
+	/* font color for resumeInfo, h3 */
+	color: #4D4D4D;
+}
+%fontColor7 {
+	/* font color for resumeInfo, h3 */
+	color: #fff;
+}
+%fontColor8 {
+	/* font color for resumeInfo, h3 */
+	color: #333;
+}
+%fontColor9 {
+	/* font color for resumeInfo, h3 */
+	color: #F0BF00;
+}
+%fontColor10 {
+	/* font color for resumeInfo, h3 */
+	color: #312A1E;
+}
+
+%colorTransparent {
+	/* color for any element */ 
+	color: transparent;
+}
+
+%bgColor1 {
+	/* background color for navbar */
+	 @include linear-gradient(#000, #fff, 1);
+}
+
+%borderColor1 {
+	/* background color for navbar */
+	 @include linear-gradient-border(#fff, #818181, 1);
+}
+
+%multilineEllipsis {
+	/* ellipsis for multiline text */
+	@include multiline-ellipsis(86px, 14px, 10px);
+}
+
+%bgColor2 {
+	/* background color for inputText */
+	 background-color: #bdbdbd;
+}
+
+%bgColor3 {
+	/* background color for previous and next links */
+	background-color: #f0efef;
+}
+
+%bgColor4 {
+	/* background color for imageContainer*/
+	background-color: #999999;
+}
+
+%bgColor5 {
+	/* background color for  */
+	background-color: rgba(255, 255, 255, 0.77);
+}
+
+%bgColor6 {
+	/* background color for resumeImage*/
+	background-color: #484848;
+}
+
+%bgColor7 {
+	/* background color for resumeImage*/
+	background-color: #D1D1D1;
+}
+
+%bgColor8 {
+	/* background color for resumeImage*/
+	@include rgba(#fff, 0.6, 1);
+}
+%bgColor9 {
+	/* background color for resumeImage*/
+	@include rgba(#fff, 0.5, 1);
+}
+
+%bgColor10 {
+	/* background color for resumeImage*/
+	background-color: #fff;
+}
+%bgColor11 {
+	/* background color for resumeImage*/
+	@include rgba(#000, 0, 1);
+}
+%bgColor12 {
+	/* background color for resumeImage*/
+	background-color: #43413E;
+}
+%bgColor13 {
+	/* background color for resumeImage  yellow*/
+	background-color: #F0BF00;
+}
+%bgColor14 {
+	/* background color for resumeImage*/
+	background-color: #E3E7E4;
+}
+
+%bgColor15 {
+	/* background color for resumeImage*/
+	background-color: #555555;
+}
+
+%bgColor16 {
+	/* background color for resumeImage*/
+	background-color: #E3E4E7;
+}
+
+%bgColor17 {
+	/* background color for resumeImage*/
+	background-color: #656A64;
+}
+%bgColor18 {
+	/* background color for resumeImage*/
+	background-color: #efefef;
+}
+
+%borderColor1 {
+	/* border-color for resumeImage*/
+	border-color: #fff;
+}
+%borderColor2 {
+	/* border-color for resumeImage*/
+	border-color: #656A64;
+}
+
+%bgColorTransparent {
+	/* background color for inputText */
+	 background-color: transparent;
+}
+
+%bgColor1Hover {
+	/* background color for navbar link hover */
+	 @include linear-gradient(#818181, #fff, 1);
+}
+
+%fontSize1 {
+	/* font size for items count element*/
+	font-size: 28px;
+}
+
+%heightTopbar {
+	/* topbar height*/
+	height: 40px;
+}
+
+%imageWidth {
+	/* imageWidth */
+	width: 920px;
+}
+
+%imageHeight {
+	/* imageHeight */
+	height: 310px;
+}
+
+%imageContainerHeight {
+	/* imageContainerHeight */
+	height: 350px;
+}
+
+%navBorderShadow {
+	/* Border shadow for navbar */
+	@include box-shadow(0, 1px, 1px, #000 ,1);
+}
+
+%navBorderLeft {
+	/* Border width for nav */
+	border-left: 1px solid;
+}
+
+%navBorderColor {
+	/* Border color for navbar */
+	@include rgba(#707070, 0.55, 1);
+}
+
+%heightNavbar {
+	/*navbar height*/
+	height: 50px;
+}
+
+%widthBasket {
+	/* width for basket and item count elements*/
+	width: 71px;
+}
+
+
+
+/* placeholders for repeat elements 
+=====================================*/
+
+%tahoma {
+	/* font family for logo link, navbar links */
+	font-family: tahoma;
+}
+
+%PTSB { 
+	font-family: PTSB_font, Tahoma, sans-serif;
+}
+
+%Patua { 
+	font-family: Patua_font, Tahoma, sans-serif;
+}
+%Katua { 
+	font-family: Katua_font, Tahoma, sans-serif;
+}
+%Jatua { 
+	font-family: Jatua_font, Tahoma, sans-serif;
+}
+%Matua { 
+	font-family: Matua_font, Tahoma, sans-serif;
+}
+
+%fontello { 
+	font-family: fontello_font, Tahoma, sans-serif;
+}
+
+%fontStrong {
+	/* font weight for any text */
+	font-weight: bold;
+}
+
+%overflowScroll {
+	/* overflow scroll for any box */
+	overflow: scroll;
+}
+%overflowScrollY {
+	/* overflow scroll for any box */
+	overflow-y: scroll;
+}
+%overflowScrollX {
+	/* overflow scroll for any box */
+	overflow-x: scroll;
+}
+
+%textDecorNone {
+	/* text decoration for any text */
+	text-decoration: none;
+}
+	
+%textDecorUnderline {
+	/* text decoration for any text */
+	text-decoration: underline;
+}
+
+%listStyleNone {
+	/* list style for any list */
+	list-style: none;
+}
+
+%floatLeft {
+	/* float for any block */
+	float: left;
+}
+
+%floatRight {
+	/* float for any block */
+	float: right;
+}
+
+%borderStyleSolid {
+	/* border style for any element */
+	border-style: solid;
+}
+
+%borderNone {
+	/* border for any element */
+	border: none;
+}
+%borderRadius5px {
+	/* border for any element */
+	border-radius: 5px;
+}
+
+%borderInset {
+	/* border for any element */
+	border: inset;
+}
+
+%borderOutset {
+	/* border for any element */
+	border: outset;
+}
+
+%borderSolid {
+	/* border for any element */
+	border: solid;
+}
+
+%borderDashed {
+	/* border for any element */
+	border: dashed;
+}
+
+%borderDotted {
+	/* border for any element */
+	border: dotted;
+}
+			
+%bgImageNone {
+	/* border for any element */
+	background-image: none;
+}
+
+%positionAbsolute {
+	/* position for any element */
+	position: absolute;
+}
+
+%positionRelative {
+	/* position for any element */
+	position: relative;
+}
+
+%positionCenter {
+ 	/* position center for any element*/
+	margin: 0 auto;
+}
+
+%boxSizingBorderBox {
+ /* box sizing for all element in pages */
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+%bgPosNoRepeat {
+	background-position: center center;
+	background-repeat: no-repeat no-repeat;
+}
+
+%cursorPointer {
+	cursor: pointer;
+}
+
+%displayInlineBlock {
+	/*display style for any element*/
+	display: inline-block;
+}
+
+%displayBlock {
+	/*display style for any element*/
+	display: block;
+}
+
+%displayNone {
+	/*display style for any element*/
+	display: none;
+}
+
+%vertAlignMiddle {
+	/* vertical align for any element*/
+	vertical-align: middle;
+}
+%vertAlignSub {
+	/* vertical align for any element*/
+	vertical-align: sub;
+}
+%vertAlignTop {
+	/* vertical align for any element*/
+	vertical-align: top;
+}
+%vertAlignTextTop {
+	/* vertical align for any element*/
+	vertical-align: text-top;
+}
+%vertAlignBaseline {
+	/* vertical align for any element*/
+	vertical-align: baseline;
+}
+
+

@@ -1,0 +1,941 @@
+/* Style file for site======================
+============================================*/
+/* Base elements styles====================
+===========================================*/
+/*
+
+    reset.css
+    * Resets default browser CSS.
+
+*/
+html {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* This helps to make newer HTML5 elements behave like DIVs in older browers */
+article, aside, details, figcaption, figure, dialog,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* Line-height should always be unitless! */
+body {
+  line-height: 1.5;
+  background: white; }
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+/* float:none prevents the span-x classes from breaking table-cell display */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float: none !important; }
+
+table, th, td {
+  vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ''; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img {
+  border: none; }
+
+/* Remember to define your own focus styles! */
+:focus {
+  outline: 0; }
+
+/*===========================================
+
+	baseElement.scss
+	* css style for base Elements
+
+=============================================*/
+*, *:focus {
+  outline: none; }
+
+body {
+  background: url("../images/bg.jpg") no-repeat fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-size: 100% auto;
+  background-position: 0px 40px; }
+  body .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    width: 1170px !important; }
+
+.clear {
+  clear: both; }
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " "; }
+
+.clearfix:after {
+  clear: both; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+/* FONT Definitions =================================
+=====================================================*/
+/* PTSans Bold font for any text ++++++++++++++++++++++++++++++++++++++*/
+@font-face {
+  font-family: 'Patua_font';
+  src: url("fonts/Patua.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Katua_font';
+  src: url("fonts/Katua.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Jatua_font';
+  src: url("fonts/Jatua.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Matua_font';
+  src: url("fonts/Matua.woff") format("woff"); }
+
+@font-face {
+  font-family: 'fontello_font';
+  src: url("fonts/fontello.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'PTSB_font';
+  src: url("fonts/PTSB-webfont.eot");
+  src: url("fonts/PTSB-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/PTSB-webfont.ttf") format("truetype"), url("fonts/PTSB-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* MyriadPro Semi-Condensed font for any text */
+@font-face {
+  font-family: 'MPSC_font';
+  src: url("fonts/MPSC-webfont.eot");
+  src: url("fonts/MPSC-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/MPSC-webfont.ttf") format("truetype"), url("fonts/MPSC-webfont.svg#MPSC_font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MPSC_fontie';
+  src: url("fonts/MPSC-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: 'MPSC_fontAlt';
+  src: url("fonts/MPSC-webfont.eot");
+  src: url("fonts/MPSC-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/MPSC-webfont.woff") format("woff"), url("fonts/MPSC-webfont.ttf") format("truetype"), url("fonts/MPSC-webfont.svg#MPSC_font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* MyriadPro Light Semi-Condensed font for any text */
+@font-face {
+  font-family: 'MPLSC_font';
+  src: url("fonts/MPLSC-webfont.eot");
+  src: url("fonts/MPLSC-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/MPLSC-webfont.woff") format("woff"), url("fonts/MPLSC-webfont.ttf") format("truetype"), url("fonts/MPLSC-webfont.svg#MPLSC_font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* MyriadPro Regular font for any text ++++++++++++++++++++*/
+@font-face {
+  font-family: 'MPR_font';
+  src: url("fonts/MPR-webfont.eot");
+  src: url("fonts/MPR-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/MPR-webfont.ttf") format("truetype"), url("fonts/MPR-webfont.svg#MPR_font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MPR_fontie';
+  src: url("fonts/MPR-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: 'MPR_fontAlt';
+  src: url("fonts/MPR-webfont.eot");
+  src: url("fonts/MPR-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/MPR-webfont.woff") format("woff"), url("fonts/MPR-webfont.ttf") format("truetype"), url("fonts/MPR-webfont.svg#MPR_font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* MyriadPro Light font for any text */
+@font-face {
+  font-family: 'MPL_font';
+  src: url("fonts/MPL-webfont.eot");
+  src: url("fonts/MPL-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/MPL-webfont.woff") format("woff"), url("fonts/MPL-webfont.ttf") format("truetype"), url("fonts/MPL-webfont.svg#MPL_font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* MyriadPro Bold Semi-Condensed font for any text */
+@font-face {
+  font-family: 'MPBSC_font';
+  src: url("fonts/MPBSC-webfont.eot");
+  src: url("fonts/MPBSC-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/MPBSC-webfont.ttf") format("truetype"), url("fonts/MPBSC-webfont.svg#MPBSC_font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MPBSC_fontie';
+  src: url("fonts/MPBSC-webfont.woff") format("woff"); }
+
+/* MyriadPro Semi Bold font for any text */
+@font-face {
+  font-family: 'MPSB_font';
+  src: url("fonts/MPSB-webfont.eot");
+  src: url("fonts/MPSB-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/MPSB-webfont.ttf") format("truetype"), url("fonts/MPSB-webfont.svg#MPSB_font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MPSB_fontie';
+  src: url("fonts/MPSB-webfont.woff") format("woff"); }
+
+/* MyriadPro Semi Bold Semi-Condensed font for any text */
+@font-face {
+  font-family: 'MPSBSC_font';
+  src: url("fonts/MPSBSC-webfont.eot");
+  src: url("fonts/MPSBSC-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/MPSBSC-webfont.ttf") format("truetype"), url("fonts/MPSBSC-webfont.svg#MPSBSC_font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MPSBSC_fontie';
+  src: url("fonts/MPSBSC-webfont.woff") format("woff"); }
+
+/*==========================================*/
+/*Styles for changable elements, Placeholders
+============================================*/
+/* placeholders for changable elements 
+=====================================*/
+header .logo, .nav li a, .firstSec h1, h3, .mailNotify input:focus, .mailNotify button, .work article .workDescription, .blogSection button, .portraitTeam .pageSymbol, .portraitTeam h2, .portraitTeam .portraitItem .team, .contact button {
+  /* font color for resumeInfo, h3 */
+  color: #fff; }
+
+.portfolio .portfolioItems .item h3 {
+  /* font color for resumeInfo, h3 */
+  color: #333; }
+
+.portfolio .portfolioItems .item a, .rowBlog .blogItems .blogItem a {
+  /* font color for resumeInfo, h3 */
+  color: #F0BF00; }
+
+.portfolioSection, .portfolioSection .pageSymbol, .ServicesSection .pageSymbol, .ServicesSection .rowService .spanI h3, .blogSection, .blogSection .pageSymbol, .rowBlog .blogItems .blogItem h3, .rowBlog .blogItems .blogItem p {
+  /* font color for resumeInfo, h3 */
+  color: #312A1E; }
+
+.rowBlog .blogItems .blogItem p {
+  /* ellipsis for multiline text */ }
+  .rowBlog .blogItems .blogItem p .ellipsis {
+    overflow: hidden;
+    height: 86px;
+    line-height: 14px; }
+  .rowBlog .blogItems .blogItem p .ellipsis:before {
+    content: "";
+    float: left;
+    width: 5px;
+    height: 86px; }
+  .rowBlog .blogItems .blogItem p .ellipsis > *:first-child {
+    float: right;
+    width: 100%;
+    margin-left: -5px; }
+  .rowBlog .blogItems .blogItem p .ellipsis:after {
+    content: "\02026";
+    float: right;
+    position: relative;
+    top: -25px;
+    left: 100%;
+    width: 10px;
+    margin-left: -10px;
+    padding-right: 5px;
+    text-align: right;
+    background: white;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white), color-stop(50%, white));
+    background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white); }
+
+.navbar-toggle .icon-bar {
+  /* background color for inputText */
+  background-color: #bdbdbd; }
+
+.rowBlog .blogItems {
+  /* background color for resumeImage*/
+  background-color: #fff; }
+
+.mailNotify input:focus, .mailNotify button:hover, .blogSection button:hover, .contact button:hover {
+  /* background color for resumeImage*/
+  background-color: #43413E; }
+
+.mailNotify button, .blogSection button, .contact button {
+  /* background color for resumeImage  yellow*/
+  background-color: #F0BF00; }
+
+.mailNotify input {
+  /* background color for resumeImage*/
+  background-color: #E3E7E4; }
+
+.contact form input, .contact form textarea {
+  /* background color for resumeImage*/
+  background-color: #E3E4E7; }
+
+.contact form input:focus, .contact form textarea:focus {
+  /* background color for resumeImage*/
+  background-color: #656A64; }
+
+.portfolioSection, .ServicesSection, .blogSection {
+  /* background color for resumeImage*/
+  background-color: #efefef; }
+
+.contact form input:focus, .contact form textarea:focus {
+  /* border-color for resumeImage*/
+  border-color: #656A64; }
+
+.navbar-toggle {
+  /* background color for inputText */
+  background-color: transparent; }
+
+/* placeholders for repeat elements 
+=====================================*/
+header .logo, .nav li a, .work article .workDescription {
+  /* font family for logo link, navbar links */
+  font-family: tahoma; }
+
+.mailNotify {
+  font-family: Jatua_font, Tahoma, sans-serif; }
+
+.socIcons li a, .pageSymbol, .ServicesSection .rowService .spanI span {
+  font-family: fontello_font, Tahoma, sans-serif; }
+
+.strong, header .logo, .nav li a, .firstSec h1, .mailNotify button, .work article .workDescription, .blogSection button, .contact button {
+  /* font weight for any text */
+  font-weight: bold; }
+
+body {
+  /* overflow scroll for any box */
+  overflow-y: scroll; }
+
+header .logo, .nav li a, .rowBlog .blogItems .blogItem a {
+  /* text decoration for any text */
+  text-decoration: none; }
+
+header .logo {
+  /* float for any block */
+  float: left; }
+
+.rowBlog .blogItems .blogItem .date {
+  /* float for any block */
+  float: right; }
+
+.mailNotify input {
+  /* border for any element */
+  border: none; }
+
+.navbar-toggle {
+  /* border for any element */
+  background-image: none; }
+
+header .logo {
+  /* position for any element */
+  position: absolute; }
+
+*,
+*:before,
+*:after {
+  /* box sizing for all element in pages */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.nav li {
+  /*display style for any element*/
+  display: inline-block; }
+
+.nav li a {
+  /*display style for any element*/
+  display: block; }
+
+/*==========================================*/
+/*Styles for MAIN page elements=============
+============================================*/
+/* Body style for site =====================
+============================================*/
+/* Header for site==========================
+============================================*/
+/* Style for TOPBAR ===============
+==========================================*/
+/* Header for site==========================
+============================================*/
+header {
+  background-color: #0B333F;
+  width: 100%;
+  height: 92px;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #FFD630;
+  z-index: 10; }
+  header .brand {
+    margin-top: 20px; }
+  header .logo {
+    z-index: 500;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px; }
+  header .logo:hover {
+    color: #F0BF00; }
+
+/* Style for NAVBAR ===============*/
+.nav {
+  margin-top: 20px; }
+  .nav li a {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 8px 10px;
+    font-size: 14px;
+    line-height: 20px; }
+  .nav li a:hover {
+    background-color: #F0BF00; }
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0; }
+
+.navbar-toggle {
+  background-color: #f0bf00 !important;
+  margin: 25px; }
+  .navbar-toggle .icon-bar {
+    display: block;
+    border-radius: 1px;
+    width: 22px;
+    height: 2px; }
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px; }
+
+/*------------------------------------------------------------------------
+====================Responsive============================================*/
+@media (max-width: 1170px) {
+  .container {
+    width: 100%; } }
+@media (max-width: 767px) {
+  header {
+    height: auto; }
+
+  .nav {
+    width: 90px;
+    margin: 10px auto; } }
+/*
+@media (max-width: 979px) {
+	header {
+		border-bottom: none;
+		height: auto;
+	}
+	.navbar-collapse {
+		&.collapse {
+			display: none !important;
+			&.in {
+				display: block !important;
+			}
+		}
+	}
+
+	.navbar-header {
+		float: none;
+		.navbar-toggle {
+			display: block;
+		}
+	}
+	.navbar-collapse {
+		max-height: inherit;
+	}
+	.nav {
+		//float: none !important;
+		width: 90px;
+		margin: 10px auto;
+		li {
+			width: 100%;
+			display: block;
+			a {
+				width: 100%;
+				padding: 10px;
+				background: none;
+				&:hover {
+					background-color: #F0BF00;
+				}
+			}
+			span {
+				display: none;
+			}
+		}
+	}
+} */
+/* Style for SLIDER ===============
+==========================================*/
+/* Style for Content ===============
+==========================================*/
+/* style for Home============================
+=============================================*/
+.firstSec {
+  text-align: center;
+  padding: 30px 15px;
+  max-width: 100%; }
+  .firstSec h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 190px 0 80px; }
+  .firstSec span {
+    color: #F0BF00; }
+
+h3 {
+  font-size: 2.2em;
+  margin-bottom: 20px; }
+
+.mailNotify {
+  margin-bottom: 75px; }
+  .mailNotify input {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    width: 50%;
+    height: 60px;
+    padding: 10px;
+    font-size: 1.5em; }
+  .mailNotify input:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    transition: box-shadow 0.5s; }
+  .mailNotify button {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 1.5em;
+    border: none;
+    width: 185px;
+    height: 60px; }
+  .mailNotify button:hover {
+    padding: 10px; }
+
+.socIcons {
+  margin: 0 auto; }
+  .socIcons li {
+    display: inline-block; }
+    .socIcons li a {
+      display: block;
+      margin: 0 20px;
+      max-width: 60px;
+      max-height: 60px;
+      font-size: 54px;
+      line-height: 1em;
+      text-decoration: none; }
+      .socIcons li a:hover {
+        opacity: 0.7; }
+    .socIcons li .twitter {
+      color: #30C5EA; }
+    .socIcons li .skype {
+      color: #00B0EE; }
+    .socIcons li .facebook {
+      color: #38569C; }
+    .socIcons li .pinterest {
+      color: #F37238; }
+    .socIcons li .googleplus {
+      color: #DB4A37; }
+
+.work {
+  position: relative;
+  background: url(../images/yellow.png) repeat-x;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+  z-index: 5; }
+  .work article {
+    padding: 150px 15px; }
+    .work article .workDescription {
+      font-size: 2.0em;
+      text-align: center;
+      vertical-align: sub; }
+
+hr {
+  position: absolute;
+  -moz-border-top-colors: #fff;
+  size: 1px;
+  width: 100%;
+  z-index: 6; }
+
+/*========================================================
+============Responsive===================================*/
+@media (max-width: 1170px) {
+  body {
+    background-color: #0b333f;
+    background-image: none;
+    background-size: cover; }
+    body .container {
+      width: 100% !important; } }
+@media (max-width: 767px) {
+  .firstSec {
+    text-align: center; }
+    .firstSec h1 {
+      font-size: 30px;
+      margin: 90px 0 10px; }
+
+  .mailNotify {
+    margin-bottom: 30px; }
+
+  .work article {
+    padding: 25px 15px; } }
+@media (max-width: 480px) {
+  .mailNotify input {
+    width: 95%;
+    margin-bottom: 10px; }
+  .mailNotify button {
+    width: 135px; }
+
+  .socIcons li a {
+    margin: 0 7px; } }
+/* style for Common===================
+=========================================*/
+.pageSymbol {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 60px;
+  line-height: 70px;
+  max-width: 60px; }
+
+/* style for Portfolio===================
+=========================================*/
+.portfolioSection {
+  padding-top: 60px; }
+
+.portfolio h2 {
+  text-align: center;
+  margin: 0.5em auto 1em;
+  font-size: 3em;
+  font-weight: bold; }
+.portfolio .portfolioItems {
+  padding-left: 15px;
+  padding-right: 15px; }
+  .portfolio .portfolioItems .item {
+    margin-bottom: 20px; }
+    .portfolio .portfolioItems .item .port {
+      opacity: 0.8; }
+      .portfolio .portfolioItems .item .port:hover, .portfolio .portfolioItems .item .port:focus {
+        opacity: 1;
+        -webkit-transition: opacity 0.3s ease-in-out 0s;
+        -moz-transition: opacity  0.3s ease-in-out 0s;
+        -o-transition: opacity 0.3s ease-in-out 0s;
+        transition: opacity  0.3s ease-in-out 0s; }
+      .portfolio .portfolioItems .item .port img {
+        max-width: 100%; }
+    .portfolio .portfolioItems .item h3 {
+      margin-top: 20px;
+      font-size: 19px;
+      line-height: 22px;
+      font-weight: bold; }
+    .portfolio .portfolioItems .item p {
+      font-size: 14px;
+      line-height: 25px;
+      margin: 10px 0 25px; }
+    .portfolio .portfolioItems .item a {
+      font-size: 13px;
+      font-weight: 600; }
+    .portfolio .portfolioItems .item a:hover {
+      text-decoration: underline; }
+
+/* style for Services===================
+=========================================*/
+.ServicesSection {
+  color: #312A1E;
+  padding-top: 60px; }
+  .ServicesSection h2 {
+    text-align: center;
+    margin: 0.5em auto 1em;
+    font-size: 3em;
+    font-weight: bold; }
+  .ServicesSection .rowService {
+    margin: -15px;
+    padding-bottom: 180px;
+    text-align: center; }
+    .ServicesSection .rowService .spanI {
+      display: inline-block;
+      width: 270px;
+      background-color: #e9e9e9;
+      padding: 40px auto;
+      margin: 15px;
+      padding: 10px; }
+      .ServicesSection .rowService .spanI span {
+        display: inline-block;
+        text-align: center;
+        color: #F0BF00;
+        font-size: 6em;
+        line-height: 1em;
+        margin: 10px auto; }
+      .ServicesSection .rowService .spanI h3 {
+        text-align: center;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: bold;
+        margin: 10px auto 15px; }
+      .ServicesSection .rowService .spanI p {
+        margin: 10px;
+        font-size: 14px;
+        line-height: 22px; }
+      .ServicesSection .rowService .spanI:hover {
+        box-shadow: 0 0 0 #fff  inset, 1px 1px 6px #C1BAC1;
+        background-color: #e9e9e9;
+        -moz-transition: box-shadow all 1s ease-in-out 1s;
+        			/*@include box-shadow (1px, 1px, 6px, #C1BAC1 ,1);
+        		 	box-shadow: (0, 1px, 1px, rgb(0, 0, 0) ,1);
+        		  	-webkit-transition: top 0.5s ease-out 0.3s;
+         			-moz-transition: top 0.5s ease-out 0.3s;
+             		-o-transition: top 0.5s ease-out 0.3s;
+             		transition: top 0.5s ease-out 0.3s;*/ }
+
+#yellow {
+  padding: 180px 15px;
+  background: url(../images/yellow_testimonial.png) repeat-x;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  color: #312A1E;
+  font-weight: bold; }
+  #yellow .autor {
+    font-size: 22px;
+    font-style: italic; }
+  #yellow .citle {
+    width: auto;
+    font-size: 42px;
+    line-height: 50px; }
+
+/*========================================================
+============Responsive===================================*/
+@media (max-width: 1170px) {
+  .rowService {
+    text-align: center; }
+    .rowService .spanI {
+      margin-bottom: 20px; } }
+@media (max-width: 767px) {
+  .ServicesSection .rowService {
+    padding-bottom: 30px; }
+
+  #yellow {
+    padding: 0 15px; }
+    #yellow .textYellow {
+      padding: 30px 15px;
+      text-align: center; } }
+@media (max-width: 480px) {
+  #yellow .textYellow .citle {
+    font-size: 30px;
+    line-height: 40px; } }
+/* style for Our Blog===================
+=========================================*/
+.blogSection {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  height: auto; }
+  .blogSection button {
+    display: block;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0 auto;
+    font-size: 20px;
+    border: none;
+    width: 205px;
+    padding: 15px 10px; }
+
+.ourBlog h2 {
+  text-align: center;
+  margin: 0.5em auto 1em;
+  font-size: 3em;
+  font-weight: bold; }
+
+.rowBlog {
+  max-width: 100%;
+  margin: 30px auto;
+  text-align: center; }
+  .rowBlog .blogItems {
+    display: inline-block;
+    margin: 0 8px 20px;
+    max-width: 367px;
+    height: auto;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 0 white inset, 0px 1px 6px rgba(0, 0, 0, 0.1); }
+    .rowBlog .blogItems img {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .rowBlog .blogItems .blogItem {
+      margin: 20px; }
+      .rowBlog .blogItems .blogItem .date {
+        font-size: 14px;
+        margin: 20px 20px 10px 0;
+        opacity: 0.7; }
+      .rowBlog .blogItems .blogItem h3 {
+        clear: right;
+        margin: 24px 0 16px;
+        font-size: 17px;
+        font-weight: bold; }
+      .rowBlog .blogItems .blogItem p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .rowBlog .blogItems .blogItem a {
+        font-size: 12px;
+        font-weight: bold; }
+      .rowBlog .blogItems .blogItem a:hover {
+        text-decoration: underline; }
+
+/*========================================================
+============Responsive===================================*/
+/* style for portraitTeam===================
+=========================================*/
+.portraitTeam {
+  background-color: #312A1E;
+  padding-top: 40px;
+  padding-bottom: 20px; }
+  .portraitTeam h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 20px auto; }
+  .portraitTeam .portraitItem {
+    margin-bottom: 60px;
+    padding: 0 15px;
+    text-align: center; }
+    .portraitTeam .portraitItem .team {
+      display: inline-block;
+      margin: 15px; }
+      .portraitTeam .portraitItem .team img {
+        max-width: 100%; }
+      .portraitTeam .portraitItem .team h3 {
+        font-size: 22px;
+        margin-bottom: 5px;
+        font-weight: bold; }
+      .portraitTeam .portraitItem .team p {
+        font-size: 18px; }
+  .portraitTeam .moreInfo {
+    margin: 0 auto;
+    padding: 30px 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 21px; }
+    .portraitTeam .moreInfo h3 {
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 100%;
+      margin-bottom: 30px;
+      font-weight: bold; }
+      .portraitTeam .moreInfo h3 span {
+        font-weight: normal;
+        color: rgba(255, 255, 255, 0.7); }
+    .portraitTeam .moreInfo p {
+      max-width: 100%;
+      color: rgba(255, 255, 255, 0.9); }
+
+/*========================================================
+============Responsive===================================*/
+@media (max-width: 767px) {
+  .portrait {
+    text-align: center; }
+    .portrait .team {
+      display: inline-block;
+      margin-top: 20px; }
+
+  .portraitTeam .portraitItem {
+    margin-bottom: 20px; }
+  .portraitTeam .moreInfo {
+    font-size: 14px; } }
+/* style for Contact===================
+=========================================*/
+.contact {
+  padding: 50px 15px 0; }
+  .contact button {
+    display: block;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: none;
+    width: 205px;
+    height: 60px; }
+  .contact form input {
+    display: inline-block;
+    height: 52px;
+    width: 49%;
+    margin: 10px 0;
+    padding: 10px;
+    color: #555;
+    border: solid 1px #E3E4E7;
+    border-radius: 4px;
+    font-size: 18px; }
+  .contact form input:focus {
+    color: #ccc; }
+  .contact form textarea {
+    font-size: 18px;
+    border: solid 1px #E3E4E7;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    height: 237px; }
+  .contact form textarea:focus {
+    color: #ccc; }
+
+/*========================================================
+============Responsive===================================*/
+@media (max-width: 767px) {
+  .contact {
+    padding-top: 20px; } }
+@media (max-width: 480px) {
+  .contact form input {
+    display: block;
+    float: none !important;
+    width: 100%;
+    margin: 5px auto; }
+  .contact form textarea {
+    margin: 0 auto 5px; } }
+/* Style for FOOTER ===============
+==========================================*/
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #efefef;
+  text-align: center; }
+  footer p {
+    padding-top: 30px;
+    font-size: 15px; }
+
+/*========================================================
+============Responsive===================================*/
+@media (max-width: 480px) {
+  footer p {
+    font-size: 13px; } }
+/* styles for Responsive */
+/*Responsive styles======================
+=========================================*/
+/* Style for Large screens ===============
+==========================================*/
+/* Style for Medium screens ===============
+==========================================*/
+/* Style for Small screens ===============
+==========================================*/
