@@ -52,6 +52,12 @@
 	}
 }
 
+#contact .pageSymbol {
+	background-color: #fff;
+	@include border-radius(50%);
+	max-width: 70px;
+}
+
 /*========================================================
 ============Responsive===================================*/
 @media (max-width: 767px) {

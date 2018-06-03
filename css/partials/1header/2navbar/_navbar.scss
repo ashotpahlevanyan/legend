@@ -4,6 +4,9 @@
 	margin-top: 20px;
 	li {
 		@extend %displayInlineBlock;
+		&+li {
+			margin-left: 10px;
+		}
 		a {
 			@extend %fontColor7;
 			@extend %textDecorNone;
@@ -16,7 +19,7 @@
 			font-size: 14px;
 			line-height: 20px;
 		}
-		a:hover {
+		a:hover, a:focus {
 			background-color: #F0BF00; 
 		}
 	}
