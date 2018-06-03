@@ -306,12 +306,7 @@ header .logo, .nav li a, .firstSec h1, h3, .mailNotify input:focus, .mailNotify 
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
 }
 
-.navbar-toggle .icon-bar {
-  /* background color for inputText */
-  background-color: #bdbdbd;
-}
-
-.rowBlog .blogItems {
+.navbar-toggle .icon-bar, .rowBlog .blogItems {
   /* background color for resumeImage*/
   background-color: #fff;
 }
@@ -513,8 +508,18 @@ header .logo:hover {
   }
 
   .nav {
-    width: 90px;
+    width: 100%;
     margin: 10px auto;
+  }
+  .nav li {
+    width: 100%;
+  }
+  .nav li + li {
+    margin-left: 0;
+  }
+
+  .navbar {
+    margin-bottom: 0;
   }
 }
 /*
@@ -1105,6 +1110,7 @@ footer {
   height: 70px;
   background-color: #efefef;
   text-align: center;
+  margin-top: 10px;
 }
 footer p {
   padding-top: 30px;

@@ -37,7 +37,7 @@
 		border-radius: 1px;
 		width: 22px;
 		height: 2px;
-		@extend %bgColor2;
+		@extend %bgColor10;
 	}
 	.icon-bar + .icon-bar {
 		margin-top: 4px;
@@ -60,8 +60,17 @@
 		height: auto;
 	}
 	.nav{
-		width: 90px;
+		width: 100%;
 		margin: 10px auto;
+		li {
+			width: 100%;
+			& + li {
+				margin-left: 0;
+			}
+		}
+	}
+	.navbar {
+		margin-bottom: 0;
 	}
 }
 /*
